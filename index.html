@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="us-en"></html>
+
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
+</head>
+
+<body id="page-container">
+    <div>
+        <header>
+            <h1>CSS Snippet Cheatsheet</h1>
+                <p> Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy. </p><br>
+        </header>
+    </div>
+    
+    <main class="article-boxes">
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>Flexbox Row</h2>
+            </div>
+            <div>
+                <p>Use these three properties to create a Flexbox row layout.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.row {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+</code>
+            </pre>
+        </article>
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>Flexbox Column</h2>
+            </div>
+            <div>
+                <p>Use this to create a FLexbox column layout.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.column {
+    display: flex;
+    flex-direction:column;
+}
+</code>
+            </pre>
+        </article>
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>CSS Grid Layout</h2>
+            </div>
+            <div>
+                <p>Build a 12-column layout using CSS Grid.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+</code>
+            </pre>
+        </article>
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>Linear Gradients</h2>
+            </div>
+            <div>
+                <p>This will create a background linear gradient from top to bottom.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rbga(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+        );
+}
+</code>
+            </pre>
+        </article>
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>Box Transition Glow</h2>
+            </div>
+            <div>
+                <p>Use transition and box shadows to glow on hover.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232,102,236,1), 0 0 15px rgba(232, 102, 236, 1);
+}
+</code>
+            </pre>
+        </article>
+        <article class="box">
+            <div class="article-titlebox">
+                <h2>Overlay Card with Title</h2>
+            </div>
+            <div>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            </div>
+            <pre class="article-codebox">
+<code>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+</code>
+            </pre>
+        </article>
+    </main>
+    <footer>
+        Made with 🐊❤️ and CSS
+    </footer>
+</body>
